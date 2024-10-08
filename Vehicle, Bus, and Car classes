@@ -1,0 +1,34 @@
+<?php
+
+class Vehicle {
+    public $name;
+    public $speed;
+    public $mileage;
+    public static $category = "Transport";
+
+    public function __construct($name, $speed, $mileage) {
+        $this->name = $name;
+        $this->speed = $speed;
+        $this->mileage = $mileage;
+    }
+}
+
+class Bus extends Vehicle {
+    public $seating_capacity;
+
+    public function __construct($name, $speed, $mileage, $seating_capacity = 50) {
+        parent::__construct($name, $speed, $mileage);
+        $this->seating_capacity = $seating_capacity;
+    }
+}
+
+class Car extends Vehicle {
+    public $doors;
+
+    public function __construct($name, $speed, $mileage, $doors = 4) {
+        parent::__construct($name, $speed, $mileage);
+        $this->doors = $doors;
+    }
+}
+
+?>
