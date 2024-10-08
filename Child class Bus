@@ -15,9 +15,8 @@ class Vehicle {
 class Bus extends Vehicle {
     public $capacity;
 
-    public function __construct($name, $speed, $mileage, $capacity) {
+    public function __construct($name, $speed, $mileage) {
         parent::__construct($name, $speed, $mileage);
-        $this->capacity = $capacity;
     }
 }
 
