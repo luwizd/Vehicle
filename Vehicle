@@ -10,14 +10,6 @@ class Vehicle {
         $this->speed = $speed;
         $this->mileage = $mileage;
     }
-
-    public function displayDetails() {
-        echo "Name: $this->name\nSpeed: $this->speed km/h\nMileage: $this->mileage km/l\n";
-    }
 }
-
-$myCar = new Vehicle("Honda Civic", 180, 15);
-
-$myCar->displayDetails();
 
 ?>
