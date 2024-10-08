@@ -1,0 +1,23 @@
+<?php
+
+class Vehicle {
+    public $name;
+    public $speed;
+    public $mileage;
+
+    public function __construct($name, $speed, $mileage) {
+        $this->name = $name;
+        $this->speed = $speed;
+        $this->mileage = $mileage;
+    }
+
+    public function displayDetails() {
+        echo "Name: $this->name\nSpeed: $this->speed km/h\nMileage: $this->mileage km/l\n";
+    }
+}
+
+$myCar = new Vehicle("Honda Civic", 180, 15);
+
+$myCar->displayDetails();
+
+?>
