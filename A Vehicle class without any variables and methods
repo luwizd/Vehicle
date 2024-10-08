@@ -1,0 +1,8 @@
+<?php
+
+class Vehicle {}
+$vehicle = new Vehicle();
+
+echo "Vehicle class created successfully.";
+
+?>
